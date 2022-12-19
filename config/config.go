@@ -42,7 +42,7 @@ func connectSQL(c Config) *sql.DB {
 	// format source username:password@tcp(host:port)/databaseName
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", c.DBUser, c.DBPass, c.DBHost, c.DBPort, c.DBName)
 	db, err := sql.Open("mysql", dsn)
-	// db, err := sql.Open("mysql", "root:@tcp(localhost:3306/db_tugas")
+	// db, err := sql.Open("mysql", "Amd A6 5400K:@tcp(localhost:3306/db_tugas")
 	if err != nil {
 		fmt.Println("terjadi error", err.Error())
 	}
